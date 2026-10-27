@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff8f0;
+  color: #34251f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  border-bottom: 1px solid #eadfd3;
+}
+
+.logo {
+  color: #34251f;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.status {
+  color: #77645a;
+  font-size: 14px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 20px;
+}
+
+.cartao {
+  background: #ffffff;
+  width: 100%;
+  max-width: 510px;
+  padding: 42px 35px;
+  text-align: center;
+  border: 1px solid #eee2d7;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(65, 42, 28, 0.06);
+}
+
+.emoji {
+  font-size: 52px;
+  margin-bottom: 22px;
+}
+
+.etiqueta {
+  color: #b85e2d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.descricao {
+  color: #75665e;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.botao {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 18px;
+  background: #c96835;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.botao:hover {
+  background: #a95026;
+  transform: translateY(-2px);
+}
+
+.botao:focus-visible {
+  outline: 3px solid #34251f;
+  outline-offset: 4px;
+}
+
+.observacao {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #8b7a70;
+}
+
+.rodape {
+  padding: 22px 15px;
+  text-align: center;
+  border-top: 1px solid #eadfd3;
+  color: #77645a;
+  font-size: 13px;
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  .cabecalho {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  main {
+    padding: 35px 16px;
+  }
+
+  .cartao {
+    padding: 35px 22px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .descricao {
+    font-size: 15px;
+  }
+}
